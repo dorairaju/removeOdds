@@ -1,7 +1,7 @@
 var obj = {
     removeOddElements: function (arr, ival) {
         if (arr[ival] === undefined) {
-            return arr;
+            return;
         }
         if (arr[ival] % 2 !== 0) {
             arr.splice(ival, 1);

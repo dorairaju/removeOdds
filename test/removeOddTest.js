@@ -22,4 +22,10 @@ describe('RemovingOddElementsFromArray', function () {
         assert.equal(arr.length, 5);
     });
 
+    it('Empty Array', function () {
+        var arr = [];
+        removeOddModule.removeOddElements(arr, 0);
+        assert.equal(arr.length, 0);
+    });
+
 });
