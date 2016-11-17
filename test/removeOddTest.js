@@ -28,4 +28,12 @@ describe('RemovingOddElementsFromArray', function () {
         assert.equal(arr.length, 0);
     });
 
+    it('Arrays with mix of odd and even comparing contents', function () {
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var expectedArray = [2, 4, 6, 8, 10];
+        removeOddModule.removeOddElements(arr, 0);
+
+        assert.equal(arr.join(), expectedArray.join());
+    });
+
 });

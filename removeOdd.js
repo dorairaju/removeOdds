@@ -8,7 +8,7 @@ var obj = {
         } else {
             ival += 1;
         }
-        obj.removeOddElements(arr, ival);
+        this.removeOddElements(arr, ival);
     }
 };
 
